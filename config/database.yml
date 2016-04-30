@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+
+development:
+  <<: *default
+  database: notam_development
+
+test:
+  <<: *default
+  database: notam_test
+
+production:
+  <<: *default
+  database: notam_production
