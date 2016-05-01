@@ -1,0 +1,7 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .navbar-header
+    %a.navbar-brand{:href => "/"} NOTAM parser
+  #menu
+    %ul.nav.navbar-nav.right
+      %li= link_to 'Messages', messages_path
+      %li= link_to 'Upload File', new_message_path
