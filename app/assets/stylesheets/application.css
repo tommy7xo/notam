@@ -15,5 +15,9 @@
  */
 
 .message-container {
-  margin: 100px;
+  margin: 50px;
+}
+
+.alert {
+  margin-top: 50px;
 }

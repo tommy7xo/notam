@@ -1,8 +1,8 @@
 .message-container
   %table.table.table-bordered
-    %thead
-      %th title
     %tbody
       - @messages.each do |message|
         %tr
-          %td=message.title
+          %td=message.a_section
+          %td=message.e_section
+
