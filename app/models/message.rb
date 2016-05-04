@@ -19,14 +19,6 @@ class Message < ActiveRecord::Base
 
   private
 
-  def section_between_markers line, marker1, marker2
-    line[/#{Regexp.escape(marker1)}(.*?)#{Regexp.escape(marker2)}/m, 1]
-  end
-
-  def concat_lines lines
-    lines.compact.join(' ')
-  end
-
   def parse_daily_hours message
     days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
     hours = {}

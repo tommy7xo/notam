@@ -13,10 +13,11 @@ gem 'haml'
 group :development, :test do
   gem 'pry-rails'
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'thin'
 end
+
+gem 'web-console', '~> 2.0', group: :development
 
 group :test do
   gem 'rspec-rails', '~> 3.3.3'

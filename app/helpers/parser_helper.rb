@@ -32,4 +32,12 @@ module ParserHelper
   def closed_match word, message
     /#{word}CLOSED/.match(message) || /#{word}CLSD/.match(message)
   end
+
+  def section_between_markers line, marker1, marker2
+    line[/#{Regexp.escape(marker1)}(.*?)#{Regexp.escape(marker2)}/m, 1]
+  end
+
+  def concat_lines lines
+    lines.compact.join(' ')
+  end
 end
