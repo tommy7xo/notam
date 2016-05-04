@@ -4,5 +4,8 @@
       - @messages.each do |message|
         %tr
           %td=message.a_section
-          %td=message.e_section
+          - message.open_hours.values.each do |day_hour|
+            %td=day_hour
+
+
 
